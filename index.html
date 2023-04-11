@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Signos</h1>
+    </header>
+
+    <input type="text" id="signos">
+    <button onclick="escolhasigno()">Buscar</button>
+    <div id="frase"></div>
+    <div id="imagens">
+        <img src="" alt="img" id="foto">
+    </div>
+
+    <script>
+        function escolhasigno() {
+            var texto;
+            var signo = document.querySelector("#signos").value;
+            var foto = document.getElementById("foto");
+
+            switch (signo) {
+                case "aries":
+                    texto = "Agressivo e impulsivo, não se importa de ferir os outros no caminho."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/02/17/08/25/horoscope-639126_960_720.jpg"
+                    break;
+
+                case "touro":
+                    texto = "Só pensa em comer e dormir e além de tudo é egoísta."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/02/17/08/25/horoscope-639127_960_720.jpg"
+                    break;
+
+                case "gemeos":
+                    texto = "Signo do tipo 'duas caras', mais fala do que faz."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/02/17/08/24/horoscope-639122_960_720.jpg"
+                    break;
+
+                case "cancer":
+                    texto = "É o mais chorão do zodíaco e costuma guardar rancor."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/02/22/09/38/horoscope-644862_960_720.jpg"
+                    break;
+
+                case "leao":
+                    texto = "Leoninos só pensam no próprio umbigo e são excessivamente vaidosos."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/02/17/08/24/horoscope-639123_960_720.jpg"
+                    break;
+
+                case "virgem":
+                    texto = "É cheio de manias e um eterno insatisfeito; nunca nada está bom."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/02/19/09/13/horoscope-641920_960_720.jpg"
+                    break;
+
+                case "libra":
+                    texto = "É indecisão pura e quer bancar o amiguinho de todo mundo."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/02/22/09/38/horoscope-644863_960_720.jpg"
+                    break;
+
+                case "escorpiao":
+                    texto = "Os escorpianos são muito vingativos e só pensa em transar."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/02/22/09/39/horoscope-644864_960_720.jpg"
+                    break;
+
+                case "sagitario":
+                    texto = "Inconsequente, Sagitário se acha o dono da razão."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/02/19/09/13/horoscope-641919_960_720.jpg"
+                    break;
+
+                case "capricornio":
+                    texto = "Gente fria e calculista que só se importa com poder e dinheiro."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/03/17/15/25/horoscope-677900_960_720.jpg"
+                    break;
+
+                case "aquario":
+                    texto = "Não dá para discutir com Aquário, são muito teimosos e querem ser os diferentões."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/02/17/08/24/horoscope-639124_960_720.jpg"
+                    break;
+
+                case "peixes":
+                    texto = "Piscianos vivem no mundo da lua e são muito evasivos."
+                    foto.src = "https://cdn.pixabay.com/photo/2015/02/17/08/25/horoscope-639125_960_720.jpg"
+                    break;
+
+                default:
+                    texto = "Insira signo";
+                    foto.src = ""
+            }
+
+            document.querySelector("#frase").innerHTML = texto
+        }
+
+    </script>
+
+    <footer>Disigned by: Yohan Reichert da Silva &reg;</footer>
+</body>
+
+</html>

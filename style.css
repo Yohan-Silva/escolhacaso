@@ -1,0 +1,53 @@
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/02/14/31/zodiak-1791803_960_720.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(155, 155, 155, 0.5);
+    border: 5px solid #553;
+}
+
+#signos {
+    position: absolute;
+    top: 50%;
+    right: 44%;
+}
+
+#frase {
+    position: absolute;
+    top: 40%;
+    right: 39%;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    background: rgba(155, 155, 100, 0.8);
+    border: 3px solid #553;
+}
+
+#foto {
+    position: absolute;
+    bottom: 6%;
+    right: 1%;
+    width: 500px;
+    height: 400px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    right: 39%;
+}
+
+footer {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    color: #fff;
+    background: rgba(125, 125, 75, 0.9);
+    border: 1px solid #553;
+}
